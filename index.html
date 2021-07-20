@@ -10,12 +10,25 @@
 </head>
 <body>
     <header>
-        <h1>Hello World</h1>
+        <button id="start"><h1>Click to start Code Quiz</h1></button>
     </header>
 
-    <main class="grid-container">
+    <main class="container">
         <div class="high-score">view high score</div>
-        <div class="quiz-question">quiz question</div>
+        <section class="quiz-question">
+            <!-- <h1 class="welcome">Are you ready?</h1>
+            <button id="start">Start</button> -->
+            <div id="quiz-question-container" class="hide">
+                <div id="question" class="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn1">Choice 1</button>
+                    <button class="btn2">Choice 2</button>
+                    <button class="btn3">Choice 3</button>
+                    <button class="btn4">Choice 4</button>
+                </div>
+                <div id="message"></div>
+            </div>
+        </section>
         <div class="timer">timer</div>
     </main>
 

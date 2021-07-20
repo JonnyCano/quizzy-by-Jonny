@@ -36,18 +36,44 @@ h1 {
     margin: 20px;
 }
 
-.grid-container {
+.container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 60px 80% 60px;
+    grid-template-columns: 70px 80% 70px;
     grid-gap: 10px;
     margin: 10px;
     height: 70vh;
 }
 
+#quiz-question-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20%;
+}
+
 .high-score,
 .timer {
-    padding: 10px;
+    padding: 14px;
+    background-color: var(--trans);
+    border: solid 3px var(--border-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-text);
+    margin-bottom: 50vh;
+}
+
+.high-score {
+    text-align: center;
+}
+
+.high-score:hover {
+    background-color: white;
+    color: black;
+}
+
+.quiz-question {
     background-color: var(--trans);
     border: solid 3px var(--border-color);
     border-radius: 5px;
@@ -57,15 +83,20 @@ h1 {
     color: var(--main-text);
 }
 
-.quiz-question {
-    padding: 5px;
-    background-color: var(--trans);
-    border: solid 3px var(--border-color);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+button {
+    display: block;
+    font-family: 'Bangers';
     color: var(--main-text);
+    letter-spacing: 0.1em;
+    background-color: black;
+    overflow: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
 }
 
 footer {

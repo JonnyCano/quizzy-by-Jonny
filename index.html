@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/canocan_3000.png">
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
 </head>
 <body>
     <header>
-        <button id="start"><h1>Click to start Code Quiz</h1></button>
+        <button id="start" onClick="addQuestions()"><h1>Click to start Code Quiz</h1></button>
     </header>
 
     <main class="container">
@@ -18,7 +20,7 @@
         <section class="quiz-question">
             <!-- <h1 class="welcome">Are you ready?</h1>
             <button id="start">Start</button> -->
-            <div id="quiz-question-container" class="hide">
+            <div id="quiz-question-container">
                 <div id="question" class="question">Question</div>
                 <div id="answer-buttons" class="btn-grid">
                     <button class="btn1">Choice 1</button>
@@ -27,6 +29,28 @@
                     <button class="btn4">Choice 4</button>
                 </div>
                 <div id="message"></div>
+            </div>
+            <div id="scoreBoardForm" class="hide">
+                <h2>All done!</h2>
+                <form class="highScore">
+                    <div>
+                        <label for="highScore">Your final score is: <span id="theScore"></span></label>
+                        <input type="text" id="highScore" name="highScore" value="" disabled />
+                    </div>
+                    <div>
+                        <label for="userInitials">Enter initials:</label>
+                        <input type="text" id="userInitials" name="userInitials" minlength="1" maxlength="3" />
+                    </div>
+                    <button onclick="scoreBoardFormHandler(event)" class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="the-scoreboard hide">
+                <h2>High Scores</h2>
+                <p id="the-high-scoreboard-p">
+
+                </p>
+                <button onclick="document.location='jonnycano/github.io/quizzy-by-jonny/'">Go back</button>
+                <button onclick="removeTheScoreboard()">Clear high scores</button>
             </div>
         </section>
         <div class="timer">timer</div>

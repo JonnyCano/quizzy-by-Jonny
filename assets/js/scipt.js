@@ -58,9 +58,9 @@ var question6 = {
 }
 
 var question7 = {
-    Question: "The condition in an if/else statement is enclosed with _______.",
-    Choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
-    Answer: "parenthesis"
+    Question: "The 'for' attribute in the label form element links with this input attribute:",
+    Choices: ["disbled", "id", "placeholder", "type"],
+    Answer: "id"
 }
 
 var question8 = {
@@ -81,6 +81,36 @@ var question10 = {
     Answer: "includes()"
 }
 
+var question11 = {
+    Question: "These are all form submissions that can go in the action attribute assignment request to the server except _______:",
+    Choices: ["false", "relative path", "url", "website"],
+    Answer: "false"
+}
+
+var question12 = {
+    Question: "Form method:",
+    Choices: ["get", "post", "put", "all of the above"],
+    Answer: "all of the above"
+}
+
+var question13 = {
+    Question: "The default css positon value of html documents",
+    Choices: ["relative", "static", "sticky", "absolute"],
+    Answer: "static"
+}
+
+var question14 = {
+    Question: "Only when a git project team member _____ and _____ merge conflicts will a merge conflict truly be resolved.",
+    Choices: ["fetch, commit", "type, push", "add, commit", "add, pull"],
+    Answer: "add, commit"
+}
+
+var question15 = {
+    Question: "In the CLI terminal, to execute all commands write them together on the same line, separated by:",
+    Choices: [", / comma", ". / period", "# hash", "; / semicolon"],
+    Answer: "; / semicolon"
+}
+
 // add the question objects the questions array
 function addQuestions() {
     questions.push(question1)
@@ -93,6 +123,11 @@ function addQuestions() {
     questions.push(question8)
     questions.push(question9)
     questions.push(question10)
+    questions.push(question11)
+    questions.push(question12)
+    questions.push(question13)
+    questions.push(question14)
+    questions.push(question15)
 
     // call the funtion that begins the quiz
     quizzy()
@@ -221,6 +256,7 @@ function scoreBoardFormHandler(event) {
 
 function viewHighScores() {
 
+    quizQuestionContainer.style.display = "none"
     scoreBoardFormEl.style.display = "none"
     theHighScoreBoardContainer.style.display = "block"
 

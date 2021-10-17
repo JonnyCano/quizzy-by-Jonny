@@ -9,7 +9,7 @@ A helpful quiz to test a user's knowledge on DOM element access, queried element
 * JavaScript
 
 ## Website
-https://jonnycano.github.io/quizzy-by-jonny/
+https://jonnycano.github.io/quizzy-by-Jonny/
 
 <img width="960" alt="Quizzy Snapshot" src="https://user-images.githubusercontent.com/84486012/137463573-28ce089e-d48a-42aa-bf18-5c2fd465c52e.PNG">
 

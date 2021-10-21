@@ -1,7 +1,7 @@
 # Quizzy By Jonny
 
 ## Purpose
-A helpful quiz to test a user's knowledge on DOM element access, queried element manipulation in JavaScript, and more.
+Ever felt that your knowledge of html syntax could use a refresher or ,aybe you ever had someone ask you, and whats the deal with arrays? Well this is the website for you. When you land on this site you are immediately faced with the heads up display. A timer in a small window toyour right if you are looking straight on and just on the opposite end of the same window the button that leads to the all time scoreboard. Now that we have that out of the way you probably noticed that in the center of the page is the quiz you have to complete in just 30 seconds. Enough time between commuting to the watercooler or just chaperoning your kids at the arcade, hey maybe they wanna play too? What are you waiting for? Your brain isn't gonna exercise itself!
 
 ## Built With
 * HTML
